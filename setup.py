@@ -7,7 +7,7 @@ with open(join(dirname(__file__), 'sudoku', '__init__.py')) as v_file:
         r'.*__version__=\'(.*?)\'', re.S
     ).match(v_file.read()).group(1)
 
-dependencies = []
+dependencies = ['cv2', 'numpy']
 
 setup(
     name='farsi_sudoku_solver',
